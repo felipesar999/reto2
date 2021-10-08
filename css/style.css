@@ -8,13 +8,14 @@
 body{
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;
+
 }
 
 .header {
   display: flex;
   flex-direction: row;
   background-color: white;
-  height: 50px;
+  height: 80px;
 }
 
 .header .header_logo {
@@ -62,58 +63,82 @@ body{
   padding-bottom: 5px;
 }
 
-.body_banking {
-  display: flex;
-  flex-direction: row;
-  height: 350px;
-  background-color: rgb(248, 242, 242);
-}
-
-.body_banking .body_banking_data {
+.contenedor {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 35%;
-  margin-top: 120x;
-  margin-left: 100px;
-  margin-right: 40px;
-  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto
+  
 }
 
-.body_banking .body_banking_data .body_banking_data_tittle{
+.contenedor .body_banking {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  background-color: rgb(248, 242, 242);
+
+}
+
+.contenedor .body_banking .body_banking_data {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .body_banking .body_banking_data .body_banking_data_tittle{
     display: flex;
     flex-direction: column;
-    font-size: 2em;
+    font-size: 2.3em;
+    width: 55%;
   }
 
-  .body_banking .body_banking_data .body_banking_data_p{
+  .contenedor .body_banking .body_banking_data .body_banking_data_p{
     display: flex;
     flex-direction: column;
-    font-size: 0.8em;
+    font-size: 1.1em;
     color: gray;
+    width: 55%;
+    margin:10px auto
   }
 
-  .body_banking .body_banking_data .body_banking_data_invite{
-    background-color: cornflowerblue;
-  width: 40%;
-  align-self: left;
-  border-radius: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  .contenedor .body_banking .body_banking_data .body_banking_data_invite{
+  width: 55%;
   display: flex;
-  justify-content: center;
-  font-size: 0.7em;
+  justify-content: flex-start;
   }
 
-.body_banking .body_banking_img {
+  .contenedor .body_banking .body_banking_data .body_banking_data_invite > button{ 
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+    width: 50%;
+    background-color: hsl(136, 65%, 51%);
+    border: none;
+    color: white;
+    }
+
+
+
+  .contenedor .body_banking .body_banking_img {
   display: flex;
-  width: 65%;
+  width: 55%;
   background-image: url("/images/bg-intro-desktop.svg");
-  background-position:30px, 50px;
+  background-position:30px -170px;
   background-repeat: no-repeat;
-  justify-content: center;
-  background-size: 170%;
+  background-size: 110%;
+  position: relative;
+}
 
+.contenedor .body_banking .body_banking_img > img{
+  height: 160%;
+  top: -130px;
+  left: 150px;
+  position: absolute ;
 }
 
 
