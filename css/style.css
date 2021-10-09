@@ -142,3 +142,21 @@ body{
 }
 
 
+.contenedor .body_choose_banking {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  background-color: rgb(233, 233, 233);
+  padding: 8% 10%;
+}
+
+
+.contenedor .body_choose_banking .body_choose_banking_tittle{
+  margin-bottom: 2% ;
+  font-size: 2em;
+}
+
+.contenedor .body_choose_banking .body_choose_banking_data_p{
+  font-size: 1.1em;
+  color: gray;
+}
